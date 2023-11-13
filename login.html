@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/login.css" rel="stylesheet" >
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+<div class="wrapper fadeInDown">
+
+    <!-- Icon -->
+    <div class="fadeIn first icon_custom">
+        <img src="images/logo.png" id="icon" alt="User Icon" />
+    </div>
+
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Login Form -->
+        <form>
+            <label class="text-head mt-4">Tên Đăng Nhập</label>
+            <input type="text" id="username" class="fadeIn second" name="username">
+            <label class="text-head">Mật Khẩu</label>
+            <input type="password" id="password" class="fadeIn third" name="password">
+            <!-- Begin Noti Fail -->
+            <div class="div-report position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="400" height="60" viewBox="0 0 266 60" fill="none" style="position: absolute; left: -42px; top: -10px;">
+                    <g filter="url(#filter0_d_101_1018)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8685 15.6436L33.7633 8.64355L39.8921 15.6436H245C248.314 15.6436 251 18.3298 251 21.6436V36.6428C251 39.9565 248.314 42.6428 245 42.6428H17C13.6863 42.6428 11 39.9565 11 36.6428V21.6436C11 18.3299 13.6863 15.6436 17 15.6436H26.8685Z" fill="white"/>
+                        <path d="M33.7633 8.64355L34.1395 8.31419C34.0479 8.2096 33.917 8.14785 33.778 8.14377C33.639 8.13969 33.5047 8.19365 33.4071 8.29269L33.7633 8.64355ZM26.8685 15.6436V16.1436C27.0024 16.1436 27.1307 16.0898 27.2247 15.9944L26.8685 15.6436ZM39.8921 15.6436L39.5159 15.9729C39.6109 16.0814 39.748 16.1436 39.8921 16.1436V15.6436ZM33.4071 8.29269L26.5122 15.2927L27.2247 15.9944L34.1196 8.99442L33.4071 8.29269ZM40.2683 15.3142L34.1395 8.31419L33.3871 8.97292L39.5159 15.9729L40.2683 15.3142ZM39.8921 16.1436H245V15.1436H39.8921V16.1436ZM245 16.1436C248.038 16.1436 250.5 18.606 250.5 21.6436H251.5C251.5 18.0537 248.59 15.1436 245 15.1436V16.1436ZM250.5 21.6436V36.6428H251.5V21.6436H250.5ZM250.5 36.6428C250.5 39.6803 248.038 42.1428 245 42.1428V43.1428C248.59 43.1428 251.5 40.2326 251.5 36.6428H250.5ZM245 42.1428H17V43.1428H245V42.1428ZM17 42.1428C13.9624 42.1428 11.5 39.6803 11.5 36.6428H10.5C10.5 40.2326 13.4101 43.1428 17 43.1428V42.1428ZM11.5 36.6428V21.6436H10.5V36.6428H11.5ZM11.5 21.6436C11.5 18.606 13.9624 16.1436 17 16.1436V15.1436C13.4101 15.1436 10.5 18.0537 10.5 21.6436H11.5ZM17 16.1436H26.8685V15.1436H17V16.1436Z" fill="#FB2121"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_101_1018" x="0.5" y="0.143555" width="300" height="58.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="2" dy="4"/>
+                            <feGaussianBlur stdDeviation="6"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_1018"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_1018" result="shape"/>
+                        </filter>
+                    </defs>
+                    <text x="30" y="34" fill="red" style="font-size: 14px; line-height: 12px;">Sai tên tài khoản hoặc mật khẩu</text>
+                </svg>
+            </div>
+            <!-- End Noti Fail -->
+            <input type="submit" class="fadeIn fourth" value="Đăng nhập">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="resetpassword.html">Reset Password</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
