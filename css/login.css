@@ -6,8 +6,8 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     height: 100vh;
+    font-family: NotoSansJP-Regular;
 }
 
 a {
@@ -30,7 +30,6 @@ h2 {
     color: #cccccc;
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
 
 
 /* STRUCTURE */
@@ -95,7 +94,7 @@ input[type=button], input[type=submit], input[type=reset]  {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    text-transform: uppercase;
+    font-family: NotoSansJP-Regular;
     font-size: 16px;
     font-weight: 700;
     -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
@@ -255,6 +254,11 @@ input[type=text]:placeholder {
     color: #3B3B3B;
     font-size: 12px;
     line-height: 12px;
+}
+.text-svg{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
 }
 .bg-set-reset {
     background: #00B2EE !important;
