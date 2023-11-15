@@ -7848,6 +7848,7 @@ html:not([dir=rtl]) .callout {
   position: sticky;
   top: 0;
   z-index: 1029;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 }
 
 .header-divider {
@@ -8018,7 +8019,7 @@ html:not([dir=rtl]) .header-nav {
 
 .sidebar {
   --cui-sidebar-width: 16rem;
-  --cui-sidebar-bg: #3c4b64;
+  --cui-sidebar-bg: #fff;
   --cui-sidebar-padding-x: 0;
   --cui-sidebar-padding-y: 0;
   --cui-sidebar-color: rgba(255, 255, 255, 0.87);
@@ -8049,7 +8050,7 @@ html:not([dir=rtl]) .header-nav {
   --cui-sidebar-nav-title-color: rgba(255, 255, 255, 0.6);
   --cui-sidebar-nav-link-padding-x: 1rem;
   --cui-sidebar-nav-link-padding-y: 0.8445rem;
-  --cui-sidebar-nav-link-color: rgba(255, 255, 255, 0.6);
+  --cui-sidebar-nav-link-color: #484848;
   --cui-sidebar-nav-link-bg: transparent;
   --cui-sidebar-nav-link-border-color: transparent;
   --cui-sidebar-nav-link-border: 0 solid var(--cui-sidebar-nav-link-border-color);
@@ -8059,7 +8060,7 @@ html:not([dir=rtl]) .header-nav {
   --cui-sidebar-nav-link-active-icon-color: rgba(255, 255, 255, 0.87);
   --cui-sidebar-nav-link-disabled-color: rgba(255, 255, 255, 0.38);
   --cui-sidebar-nav-link-disabled-icon-color: rgba(255, 255, 255, 0.6);
-  --cui-sidebar-nav-link-hover-color: rgba(255, 255, 255, 0.87);
+  --cui-sidebar-nav-link-hover-color: #00A5DC;
   --cui-sidebar-nav-link-hover-bg: rgba(255, 255, 255, 0.05);
   --cui-sidebar-nav-link-hover-icon-color: rgba(255, 255, 255, 0.87);
   --cui-sidebar-nav-icon-width: 4rem;
@@ -8294,6 +8295,8 @@ html:not([dir=rtl]) .sidebar-close {
   color: var(--cui-sidebar-brand-color);
   background: var(--cui-sidebar-brand-bg);
   border-right: 1px solid #F2F2F2;
+  background: #FFF;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 }
 .sidebar-brand .sidebar-brand-narrow {
   display: none;
@@ -8410,6 +8413,8 @@ html:not([dir=rtl]) .sidebar-close {
   padding: 0;
   margin-bottom: 0;
   list-style: none;
+  border-right: 1px solid #CCC;
+  padding-top: 30px;
 }
 .sidebar-nav .nav-title {
   padding: var(--cui-sidebar-nav-title-padding-y) var(--cui-sidebar-nav-title-padding-x);
@@ -8437,6 +8442,10 @@ html:not([dir=rtl]) .sidebar-close {
   border: var(--cui-sidebar-nav-link-border);
   border-radius: var(--cui-sidebar-nav-link-border-radius);
   transition: background 0.15s ease, color 0.15s ease;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 123.077% */
 }
 @media (prefers-reduced-motion: reduce) {
   .sidebar-nav .nav-link {
