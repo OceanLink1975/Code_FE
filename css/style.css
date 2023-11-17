@@ -270,7 +270,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .show-number-product span,
 .show-number-product b {
-	color: var(--leber-admin-color-caption-input-and-everywhere-text-use, #3B3B3B);
+	color: #3B3B3B;
 	text-align: right;
 	font-size: 18px;
 	font-weight: 400;
@@ -312,6 +312,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-red {
 	color: #F00 !important;
 }
+.text-blue {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #00A5DC;
+}
 #dropdown-menu-user {
 	display: none;
 }
@@ -336,4 +342,55 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .logout-user a {
 	text-decoration: none;
 	color: #484848;
+}
+.noti-ocean {
+	position: relative;
+}
+#div-noti {
+	display: none;
+}
+.div-noti {
+	position: absolute;
+	right: 0;
+	width: 501px;
+	height: 548px;
+	flex-shrink: 0;
+	border-radius: 8px;
+	border: 1px solid #B7B7B7;
+	background: #FBFBFB;
+	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+	overflow: auto;
+}
+.div-noti h4 {
+	font-size: 16px;
+	line-height: 12px;
+	font-weight: 500;
+	color: #3B3B3B;
+	padding: 10px;
+}
+.item-noti {
+	position: relative;
+	margin-top: 10px;
+}
+.item-noti a {
+	text-decoration: none;
+}
+.icon-noti {
+	position: absolute;
+	left: 10px;
+}
+.text-noti {
+	padding-left: 45px;
+	font-size: 14px;
+	color: #3B3B3B;
+	line-height: 18px;
+}
+.text-noti b {
+	font-weight: bold;
+}
+.span-noti {
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 12px;
+	color: #B1B1B1;
 }
